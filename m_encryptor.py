@@ -7,8 +7,16 @@ def main_screen():
     
     screen=Tk()
     screen.geometry("375x398")
+    
+    #icon
+    image_icon=PhotoImage(file="key.png")
+    screen.iconphoto(False,image_icon)
 
     screen.title("Encryptor")
+
+    Label(text="Enter text for Encrypt or decrypt",fg="white",font=("calbri",13)).place(x=10,y=10)    
+    text1=Text(font="Robote 20",bg="black",relief=GROOVE,wrap=WORD,bd=0)
+    text1.place(x=10,y=50,width=355,height=100)
 
     screen.mainloop()
 
