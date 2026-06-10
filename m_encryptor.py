@@ -3,8 +3,7 @@ from tkinter import messagebox
 import base64
 import os
 
-def decrypt():
-    print("")
+
 
 
 
@@ -31,8 +30,8 @@ def main_screen():
     code=StringVar()
     Entry(textvariable=code,width=19,bd=2,font=("arial",25),show="*").place(x=10,y=200)
 
-    Button(text="Encrypt",height="2",width=23,bg="#ed3833",fg="black",bd=1,command=encrypt).place(x=10,y=250)
-    Button(text="Decrypt",height="2",width=23,bg="#00bd56",fg="black",bd=1,command=decrypt).place(x=240,y=250)
+    Button(text="Encrypt",height="2",width=23,bg="#ed3833",fg="black",bd=1).place(x=10,y=250)
+    Button(text="Decrypt",height="2",width=23,bg="#00bd56",fg="black",bd=1).place(x=240,y=250)
     Button(text="Reset",height="2",width=50,bg="#FFBF00",fg="black",bd=1,command=reset).place(x=10,y=300)
 
     
